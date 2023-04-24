@@ -61,3 +61,13 @@ ALTER TABLE `item`
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+CREATE TABLE `user` (
+  `id` int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `firstname` varchar(255) NOT NULL,
+  `lastname` varchar(255) NOT NULL
+);
+
+INSERT INTO user (firstname, lastname) VALUES ('Bruce', 'Wayne'), ('Clark', 'Kent'), 
+('Tony', 'Stark'), ('Steve', 'Rogers'), ('Natasha', 'Romanoff'), ('Peter', 'Parker'), ('Scott', 'Lang'), ('Bruce', 'Banner');
